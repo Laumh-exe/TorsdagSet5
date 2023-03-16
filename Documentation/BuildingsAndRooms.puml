@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/object-diagram
+Class Main
+Class Building
+Class Room
+
+Main *-- Building
+Main *-- Room
+
+Main : + {static} void Main(String[] args)
+Main : + {static} boolean countLampsInBuilding(Building)
+Main : + {static} int countLampsInBuilding(Building)
+
+Building : - final Room[] rooms
+Building : - int numberOfBathrooms
+Building : - int numberOfFloors
+Building : - boolean isOfficeBuilding
+Building : + Building(Room[] rooms, int numberOfBathrooms, int numberOfFloors, boolean isOfficeBuilding)
+Building : + Room[] getRooms()
+Building : + int getNumberOfBathrooms()
+Building : + int getNumberOfFloors()
+Building : + boolean isOfficeBuilding()
+
+Room : - int numberOfDoors
+Room : - int numberOfLamps
+Room : - int numberOfWindows
+Room : + Room(int numberOfDoors, int numberOfLamps, int numberOfWindows)
+Room : + int getNumberOfRooms()
+Room : + int getNumberOfLamps()
+Room : + int getNumberOfWindows()
+@enduml

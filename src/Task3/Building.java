@@ -4,13 +4,13 @@ public class Building {
     private final Room[] rooms;
     private int numberOfBathrooms;
     private int numberOfFloors;
-    private boolean isOfficeBuidling;
+    private boolean isOfficeBuilding;
 
-    public Building(Room[] rooms, int numberOfBathrooms, int numberOfFloors, boolean isOfficeBuidling) {
+    public Building(Room[] rooms, int numberOfBathrooms, int numberOfFloors, boolean isOfficeBuilding) {
         this.rooms = rooms;
         this.numberOfBathrooms = numberOfBathrooms;
         this.numberOfFloors = numberOfFloors;
-        this.isOfficeBuidling = isOfficeBuidling;
+        this.isOfficeBuilding = isOfficeBuilding;
     }
 
     public Room[] getRooms() {
@@ -25,7 +25,7 @@ public class Building {
         return numberOfFloors;
     }
 
-    public boolean isOfficeBuidling() {
-        return isOfficeBuidling;
+    public boolean isOfficeBuilding() {
+        return isOfficeBuilding;
     }
 }
